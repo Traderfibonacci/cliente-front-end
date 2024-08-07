@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Buscar Cliente por Razão Social</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Buscar Cliente por Razão Social</h1>
+        <form id="buscarForm">
+            <input type="text" class="razaoSocialBuscar" name="razaoSocial" placeholder="Razão Social">
+            <button type="submit">Buscar</button>
+        </form>
+        <ul id="clientesList"></ul>
+        <button onclick="window.location.href='index.html'">Voltar</button>
+        <p id="mensagemSucesso" style="display: none; color: green;">Cliente encontrado com sucesso!</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

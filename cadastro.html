@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Cliente</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Cadastro Cliente</h1>
+        <form id="cadastroForm">
+            <input type="text" class="cnpj" name="cnpj" placeholder="CNPJ">
+            <input type="text" class="razaoSocial" name="razaoSocial" placeholder="Razão Social">
+            <input type="text" class="usuario" name="usuario" placeholder="Usuário">
+            <input type="password" class="senha" name="senha" placeholder="Senha">
+            <select class="status" name="status">
+                <option value="ATIVO">ATIVO</option>
+                <option value="INATIVO">INATIVO</option>
+            </select>
+            <button type="submit">Cadastre-se</button>
+        </form>
+        <button onclick="window.location.href='index.html'">Voltar</button>
+        <p id="mensagemSucesso" style="display: none; color: green;">Cliente criado com sucesso!</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+

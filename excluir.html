@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Excluir Cliente</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Excluir Cliente</h1>
+        <form id="excluirForm">
+            <input type="text" class="cnpjExcluir" name="cnpj" placeholder="CNPJ">
+            <button type="submit">Excluir</button>
+        </form>
+        <button onclick="window.location.href='index.html'">Voltar</button>
+        <p id="mensagemSucesso" style="display: none; color: green;">Cliente excluído com sucesso!</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Clientes</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Clientes Cadastrados</h1>
+        <ul id="clientesList"></ul>
+        <button onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            listarClientes();
+        });
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
