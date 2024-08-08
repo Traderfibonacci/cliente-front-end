@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.querySelector("#loginForm");
     const cadastroForm = document.querySelector("#cadastroForm");
     const editarForm = document.querySelector("#editarForm");
     const excluirForm = document.querySelector("#excluirForm");
@@ -15,8 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const ISenha = document.querySelector(".senha");
     const IStatus = document.querySelector(".status");
 
+
+    
+
     function validarCampos() {
-        if (!Icnpj.value || !IRazaoSocial.value || !IUsuario.value || !ISenha.value || !IStatus.value) {
+        if (!Icnpj.value || Icnpj.value.length !== 14) {
+            mensagemErro.textContent = "CNPJ é obrigatório e deve ter 14 dígitos.";
+            mensagemErro.style.display = 'block';
+            return false;
+        }
+        if (!IRazaoSocial.value || !IUsuario.value || !ISenha.value || !IStatus.value) {
             mensagemErro.textContent = "Todos os campos são obrigatórios.";
             mensagemErro.style.display = 'block';
             return false;
@@ -279,6 +288,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.location.pathname.endsWith('listar.html')) {
         listarClientes();
     }
+
+    
 });
 
 

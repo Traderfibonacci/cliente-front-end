@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Faça seu Login</h2>
+            <p>Use seu CNPJ e senha para acessar sua conta.</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" id="cnpj" name="cnpj" required maxlength="14" placeholder="Digite seu CNPJ">
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p id="mensagemErro" class="mensagem-erro" style="display: none;"></p>
+            <p id="mensagemSucesso" class="mensagem-sucesso" style="display: none;"></p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
+
+
+
